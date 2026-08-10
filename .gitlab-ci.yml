@@ -1,0 +1,10 @@
+stages:
+  - build
+  - deploy
+
+include:
+  - project: "max-fullstack-developer/gitlab-ci-templates"
+    ref: main
+    file:
+      - "/build.yml"
+      - "/deploy-frontend.yml"

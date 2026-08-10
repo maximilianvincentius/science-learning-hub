@@ -1,0 +1,63 @@
+{
+  "name": "science-learning-hub",
+  "version": "1.0.1",
+  "description": "Science learning hub backend",
+  "scripts": {
+    "clean": "rm -rf ./bin",
+    "transpile": "babel ./src --out-dir ./bin --copy-files",
+    "build": "npm install && npm run clean && npm run transpile",
+    "dev": "npm run build && nodemon ./bin/server.js | pino-pretty",
+    "start": "node ./bin/server.js",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.7.0",
+    "jest-runner-mocha": "^0.6.0",
+    "mocha": "^7.2.0",
+    "nock": "^12.0.2",
+    "nyc": "^15.0.0",
+    "pino-pretty": "^13.1.3",
+    "sinon": "^9.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.966.0",
+    "@aws-sdk/s3-request-presigner": "^3.966.0",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.4.1",
+    "nodemon": "^3.1.4",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^13.0.0"
+  },
+  "nodemonConfig": {
+    "exec": "npm run start",
+    "watch": [
+      "src/*",
+      "config/*"
+    ],
+    "ignore": [
+      "**/__test__/**",
+      "*.test.js"
+    ]
+  }
+}

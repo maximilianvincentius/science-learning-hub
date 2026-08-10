@@ -1,0 +1,23 @@
+const STATUS = {
+  AVAILABLE: 'AVAILABLE',
+  LOCKED: 'LOCKED',
+  COMPLETED: 'COMPLETED'
+};
+
+const STATUS_TEXT = {
+  AVAILABLE: 'Available',
+  LOCKED: 'Locked',
+  COMPLETED: 'Completed'
+};
+
+const COURSE_TYPE = {
+  READING: 'READING',
+  QUIZ: 'QUIZ'
+};
+
+const QUIZ_STATUS = {
+  PASSED: 'PASSED',
+  FAILED: 'FAILED'
+};
+
+export default { STATUS, STATUS_TEXT, COURSE_TYPE, QUIZ_STATUS };

@@ -1,0 +1,12 @@
+const STATUS = {
+  COMPLETED: 'COMPLETED',
+  AVAILABLE: 'AVAILABLE',
+  LOCKED: 'LOCKED',
+};
+
+const COURSE_TYPE = {
+  READING: 'READING',
+  QUIZ: 'QUIZ',
+};
+
+module.exports = { STATUS, COURSE_TYPE };

@@ -1,0 +1,15 @@
+.skeleton-result{
+    max-width: 100px;
+}
+
+.skeleton-result h3{
+    max-width: 100px!important;
+}
+
+.skeleton-result-number{
+    width: 80px;
+}
+
+.skeleton-result-title{
+    width: 100px!important;
+}

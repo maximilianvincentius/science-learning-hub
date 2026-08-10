@@ -1,0 +1,55 @@
+[
+  {
+    "courseId": "newtons-first-law",
+    "courses": [
+      {
+        "subCourseId": "874362918473629184n",
+        "title": "Introduction to Newton’s First Law",
+        "type": "reading",
+			  "content" : "https://amzn-s3-science-learning-hub.s3.ap-southeast-3.amazonaws.com/courses/file.pdf"
+      },
+      {
+        "subCourseId": "109583746291847362n",
+        "title": "Quiz",
+        "type": "quiz",
+        "content": [
+          {
+            "id": 1,
+            "question": "What best describes newton’s first law?",
+            "options": ["Definition", "Law", "Theory", "Guess"],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "Which quantity is most relevant here?",
+            "options": ["Mass", "Time", "Force", "Energy"],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "This concept is mainly used to analyze:",
+            "options": ["Motion", "Heat", "Sound", "Light"],
+            "correct": 0
+          },
+          {
+            "id": 4,
+            "question": "SI units are important because they:",
+            "options": ["Are universal", "Are old", "Are complex", "Are optional"],
+            "correct": 0
+          },
+          {
+            "id": 5,
+            "question": "Simulations help by:",
+            "options": [
+              "Replacing thinking",
+              "Visualizing concepts",
+              "Avoiding math",
+              "Guessing results"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  }
+]

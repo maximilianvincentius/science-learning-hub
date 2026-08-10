@@ -1,0 +1,87 @@
+/* Swiper Slide Styles */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  border-radius: 28px;
+  filter: blur(8px);
+  opacity: 0.45;
+  transform: scale(0.92);
+  transition:
+    filter 0.5s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+/* Active slide - sharp and bright */
+.swiper-slide-active {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Text shadow for navigation buttons */
+.text-shadow {
+  color: white;
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.7),
+    0 0 5px rgba(255, 255, 255, 0.916);
+}
+
+/* Swiper Navigation Buttons - Dark Circle Style */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  background: rgba(15, 23, 42, 0.86);
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.3));
+}
+
+.swiper-button-prev:hover {
+  background: rgba(30, 64, 175, 0.92);
+}
+
+.swiper-button-next:hover {
+  background: rgba(30, 64, 175, 0.92);
+}
+
+.swiper-button-prev {
+  left: 1vw !important;
+}
+
+.swiper-button-next {
+  right: 1vw !important;
+}
+
+/* Pagination Dots - Dark Circle Style */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #93c5fd;
+  opacity: 0.55;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #2563eb;
+  opacity: 0.9;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb;
+  opacity: 1;
+}

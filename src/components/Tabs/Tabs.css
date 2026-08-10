@@ -1,0 +1,16 @@
+.custom-tab .ant-tabs-content {
+  font-size: 20px !important;
+}
+
+.custom-tab .ant-tabs-tab-btn {
+  font-size: 20px;
+  color: theme('colors.brand.primary') !important;
+}
+
+.custom-tab .ant-tabs-tab-btn[aria-selected='false'] {
+  color: theme('colors.brand.secondary-hover') !important;
+}
+
+.custom-tab .ant-tabs-ink-bar {
+  background: theme('colors.brand.primary') !important;
+}
